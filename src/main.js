@@ -6,6 +6,11 @@ import router from './router'
 
 Vue.config.productionTip = false
 
+// 加载element_ui
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+Vue.use(ElementUI)
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
@@ -13,3 +18,5 @@ new Vue({
   components: { App },
   template: '<App/>'
 })
+
+
